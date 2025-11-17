@@ -97,7 +97,7 @@ docker compose version
 
 ### 1. Cloner le dépôt
 ```bash
-git clone https://github.com/Niviferum/docker-bandnames
+git clone https://github.com/Niviferum/docker-projet-adrien
 cd docker-bandnames
 ```
 
