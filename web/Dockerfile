@@ -7,6 +7,8 @@ RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 
 WORKDIR /var/www/html
 
-COPY --chown=www-data:www-data . /var/www/html/
+# En développement, on commente le COPY car on utilise un volume
+# En production, on décommente cette ligne pour inclure les fichiers dans l'image
+# COPY --chown=www-data:www-data . /var/www/html/
 
 EXPOSE 80
